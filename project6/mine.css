@@ -1,0 +1,50 @@
+/*body{
+    background-color: white;
+}*/
+
+/*.panel-title a:hover{
+    font-weight: 700;
+}*/
+
+.panel-title img {
+    padding: 0 auto;
+    width: 35%;
+    height: auto;
+}
+
+.panel-title_hover img {
+    width: 45%;
+    height: auto;
+}
+
+.panel-title_hover a {
+    font-size: 150%;
+}
+
+.imagewrap {
+    display:block;
+    position:relative;
+}
+
+.delete-button {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.deleted-body img {
+    width: 20%;
+    height: auto;
+}
+
+.notice{
+    font-size: .75em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+body { 
+    padding-top: 70px; 
+}

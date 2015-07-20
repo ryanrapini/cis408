@@ -1,0 +1,44 @@
+#6
+Attached Files:
+File dwph5_08_Php.pdf (866.831 KB)
+Php – Adding a popular Server-Side Programming Language
+
+In contrast to what we have learned so far, the Php codes will be resolved at the Web server and transformed to the familiar HTML/CSS/JS.  
+In order to test the Php codes locally on your machine, you would need to install one of the following packages: WAMP, XAMPP, MAMP, AMPPS for Windows, or XAMPP, MAMP, AMPPS for Mac OS, or LAMP, AMPPS for Linux. 
+Use the official website for the package to download and install it. A few minor issues might occurred, such as the conflict of IP port with another software on your machine.
+Search the Web for suggestions for how to change the options in its configuration setting. 
+For example, you may need to change the Php server's port number (e.g., 81, 8075-8080) if your computer is also running Skype, SQLServer or IIS.
+Note that you need to place the php files and other files in a specific folder, e.g., WAMP uses \wamp\www; XAMPP uses \xampp\htdocs; etc.    
+
+Study:
+
+(1) The first 3 sections of http://www.w3schools.com/php/default.asp (Php Tutorial, Forms, and Advanced)
+
+(2) DWP Ch. 8: Php  (login/logout, user verification, session control, & content management)
+
+Assignment #6:
+
+Create a 3 inter-connected Php pages for Online Shopping  
+
+(1)  Page 1 is the Products Page (products.php).  It presents a heading and 3 to 5 academic products as your #5 with an image, a short description, unit price, and purchase quantity options.
+	On the right end of the heading, there is a registration button/link for the registration page. So, it’s possible for the customer to order all 3 products with some different quantities.
+	You need to keep all user order information in some Php session variables or array.  A submit button will verify whether the user had registered or not.
+	If the user had not registered, it will send the customer to a Php registration page.  Otherwise, it will process the order and present the order preview.
+	You may use #5 as a base and add Php codes and quantity options for the products.
+
+(2)  Page 2 is the Registration Page (registration.php).  It has a header but has no registration button on the right. 
+	It will take the customer information (e.g., name, contact, etc.) and save them in Php session variables/array/object.
+	At the submit button, it verifies whether the user had entered order information, if not, it sends the user to the products page.
+	Otherwise, it sends the user to the Preview Page.
+
+(3)  Page 3 is the Preview Page (preview.php).  It will have a heading but has no registration button on the right.
+	When the page loaded, it first verifies whether the user has registered, if not, it sends the user to registration page.
+	Then, it verifies whether the user had entered order information, if not, it sends the user to the product page.  To verify, the Php code checks against the session variables/array/object.
+	Otherwise, use the Php codes to formulate and display the customer information and itemized product information.  
+	Do not use popup window but post the information directly on the page.  No need to compute the subtotals or final total.
+
+(4)  Consolidate the common parts using Php functions and files.
+	For example, the checking of the registration verification and the ordering information verification should be separated individually and then included in corresponding page.
+	All pages should have file extensions ".php".   Upload your pages and related components to CIS server and submit the Products Page address.  Comments are appreciated.
+
+Have heavenly wisdom and fun in learning Php even in such a short blessed period of time!
