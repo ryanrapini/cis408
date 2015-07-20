@@ -98,7 +98,7 @@
                         $_SESSION['Email'] = $_POST['inputEmail'];
                         $_SESSION['Password'] = $_POST['inputPassword'];
 
-                        if ($_SESSION['dell'] = null || $_SESSION['surface'] = null || $_SESSION['asus'] = null){
+                        if ($_SESSION['dell'] == null || $_SESSION['surface'] == null || $_SESSION['asus'] == null){
                             header("Location: products.php"); /* Redirect browser */
                             exit();
                         } else {
